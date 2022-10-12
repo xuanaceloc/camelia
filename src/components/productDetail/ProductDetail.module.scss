@@ -1,0 +1,152 @@
+.wrapper {
+    background-color: #ededed;
+    width: 100%;
+}
+
+.content {
+    max-width: var(--default-max-width);
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+// product
+
+.product {
+    width: calc(100% / 3 * 2);
+}
+
+// detail
+
+.detail {
+    width: calc(100% / 3);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    padding-left: 30px;
+
+    hr {
+        background: #000;
+        margin: 10px 1px;
+    }
+}
+
+.detail-title {
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 15px;
+}
+
+.detail-price {
+    margin: 20px 15px;
+    color: var(--color-red);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.detail-desc {
+    ul,
+    p {
+        font-size: 14px;
+        color: var(--text-color);
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin: 0 0 15px 20px;
+    }
+}
+
+.variant-group {
+    margin: 7px 0;
+
+    h5 {
+        margin: 0px 15px 0px 0px;
+        display: block;
+        line-height: 35px;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+}
+
+.variant {
+    display: flex;
+}
+
+.variant-item {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 2px;
+    border: 1px solid transparent;
+
+    &.active {
+        border-color: var(--color-red);
+    }
+}
+
+.variant-color {
+    display: block;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.quality-group {
+    display: flex;
+    align-items: center;
+}
+
+.quality {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #666;
+    border-radius: 4px;
+
+    button {
+        font-size: 24px;
+        padding: 3px 12px;
+        color: var(--text-color);
+        cursor: pointer;
+
+        &:first-child {
+            border-right: 1px solid #666;
+        }
+        &:last-child {
+            border-left: 1px solid #666;
+        }
+    }
+
+    input {
+        font-size: 16px;
+        max-width: 80px;
+        text-align: center;
+        background-color: transparent;
+        padding: 8px;
+    }
+}
+
+.more-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    min-width: calc(50% - 6px);
+}

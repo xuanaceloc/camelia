@@ -1,0 +1,43 @@
+.container {
+    height: 55px;
+}
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    background-color: #f4f4f4;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    width: 100px;
+
+    img {
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.action-item {
+    margin: 0 6px;
+    font-size: 2.3rem;
+    color: #7c7272;
+
+    a {
+        color: #7c7272;
+    }
+}

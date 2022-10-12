@@ -1,0 +1,43 @@
+.product-img {
+    width: 80%;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 5%;
+}
+
+.next-btn {
+    right: 5%;
+}
+
+// thumb
+
+.thumb-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.product-img-thumb {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+    }
+}

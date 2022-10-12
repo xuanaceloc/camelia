@@ -1,0 +1,91 @@
+.wrapper {
+    width: 100%;
+    padding: 5px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.thumb {
+    width: 100%;
+
+    img {
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
+.name {
+    font-size: 14px;
+    color: var(--text-color);
+    font-size: 400;
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--color-red);
+    }
+}
+
+.price {
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+}
+
+// variant
+
+.variant {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.variant-item {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 2px;
+
+    &.active {
+        border-color: var(--color-red);
+    }
+
+    &:hover {
+        border-color: var(--color-red);
+        cursor: pointer;
+    }
+}
+
+.variant-color {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 5px;
+    }
+    .name {
+        font-size: 12px;
+    }
+    .variant {
+        margin: 5px auto;
+    }
+    .variant-item {
+        height: 26px;
+        width: 26px;
+        padding: 1px;
+    }
+
+    .variant-color {
+        height: 22px;
+        width: 22px;
+    }
+}

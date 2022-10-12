@@ -1,0 +1,126 @@
+.wrapper {
+    width: 100%;
+    max-width: var(--default-max-width);
+    margin: 5px auto;
+    padding: 10px 0 0 15px;
+}
+
+.nav-top {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-top-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-top-item-link {
+    display: flex;
+    margin: 10px 50px;
+
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--color-red);
+    }
+}
+
+.nav-top-item-link-active {
+    color: var(--color-red);
+}
+
+// logo
+.logo {
+    width: 150px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+// bottom nav
+
+.nav-bottom-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid#ccc;
+}
+
+.nav-bottom-link {
+    width: 200px;
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-right: 1px solid #eee;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    .nav-bottom-img-no-active {
+        display: block;
+    }
+
+    .nav-bottom-img-active {
+        display: none;
+    }
+
+    &:hover {
+        .nav-bottom-img-no-active {
+            display: none;
+        }
+
+        .nav-bottom-img-active {
+            display: block;
+        }
+
+        .nav-bottom-link-title {
+            color: var(--color-red);
+        }
+    }
+}
+
+.nav-bottom-link-active {
+    .nav-bottom-link-title {
+        color: var(--color-red);
+    }
+
+    .nav-bottom-img-no-active {
+        display: none;
+    }
+
+    .nav-bottom-img-active {
+        display: block;
+    }
+}
+
+.nav-bottom-img {
+    width: 60px;
+    height: 60px;
+
+    img {
+        height: 100%;
+        object-fit: fill;
+    }
+}
+
+.nav-bottom-link-title {
+    font-size: 14px;
+    color: var(--text-color);
+}

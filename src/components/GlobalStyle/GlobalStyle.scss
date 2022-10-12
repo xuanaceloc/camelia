@@ -1,0 +1,153 @@
+@import 'normalize.css';
+
+:root {
+    --text-color: #333;
+
+    --color-orange: #c7572b;
+    --color-red-light: #e95658;
+    --color-red: #d61c1f;
+    --default-max-width: 1200px;
+    --default-padding: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+// text page class
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #ededed;
+    padding: 10px 30px 30px;
+}
+
+.content {
+    max-width: var(--default-max-width);
+    width: 100%;
+    margin: auto;
+}
+
+.text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--text-color);
+    min-height: 1px;
+    img {
+        width: 100%;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    strong {
+        font-size: 16px;
+    }
+}
+
+.text-red {
+    color: var(--color-red);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    margin: 20px 0 15px 0;
+    padding-bottom: 15px;
+    display: block;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.main-title {
+    font-size: 26px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.separate {
+    width: 100%;
+    background-color: #000;
+    border-top: 0.5px solid #000;
+    margin: 30px auto;
+}
+
+// variant color select
+.black {
+    background-color: #000;
+}
+.grey {
+    background-color: #c7c7c7;
+}
+.blue {
+    background-color: #13014d;
+}
+.orange {
+    background-color: #c99541;
+}
+.be {
+    background-color: #e4d3be;
+}
+.yellow {
+    background-color: #fcd308;
+}
+.red {
+    background-color: #ad0e05;
+}
+.green {
+    background-color: #005e1f;
+}
+.pink {
+    background-color: #ff8787;
+}
+.violet {
+    background-color: #e0cdff;
+}
+.brown {
+    background-color: #9b5513;
+}
+.white {
+    background-color: #f8f0f0;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
