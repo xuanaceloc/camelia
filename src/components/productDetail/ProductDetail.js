@@ -4,8 +4,16 @@ import { useState } from 'react';
 import style from './ProductDetail.module.scss';
 import Button from '../button';
 import ProductImg from './productImg/ProductImg';
+import ProductDesc from './productDesc/ProductDesc';
 
 const cx = classNames.bind(style);
+
+const demoImg = [
+    'https://product.hstatic.net/1000365849/product/11cameliabalo_ebb07c7a124440f2a90a02a233857e12_master.jpg',
+    'https://product.hstatic.net/1000365849/product/12cameliabalo_d04d25c2db4743bbae9660150be0b657_master.jpg',
+    'https://product.hstatic.net/1000365849/product/13cameliabalo_dd5c5daa74d1411b8367c58944a65942_master.jpg',
+    'https://product.hstatic.net/1000365849/product/14cameliabalo_17bc2ec81c254463b24f0e3ac132608e_master.jpg',
+];
 
 const ProductDetail = () => {
     const [quality, setQuality] = useState(1);
@@ -28,7 +36,11 @@ const ProductDetail = () => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('content')}>
-                <div className={cx('product')}>{/* <ProductImg /> */}</div>
+                <div className={cx('product')}>
+                    {/* <ProductImg /> */}
+                    <ProductImg demo={demoImg} />
+                    <ProductDesc />
+                </div>
 
                 <div className={cx('detail')}>
                     <h1 className={cx('detail-title')}>

@@ -64,7 +64,7 @@ const ProductImg = () => {
             </Swiper>
             <div className={cx('thumb-wrapper')}>
                 <Swiper
-                    onSwiper={setActiveThumb}
+                    // onSwiper={setActiveThumb}
                     slidesPerView={5}
                     modules={[Navigation, Thumbs]}
                     loop
