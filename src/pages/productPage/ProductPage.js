@@ -1,11 +1,16 @@
 import classNames from 'classnames/bind';
+import { useContext } from 'react';
 
 import style from './ProductPage.module.scss';
 import Product from '../../components/product';
+import { ProductContext } from '../../contexts/product';
 
 const cx = classNames.bind(style);
 
 const ProductPage = () => {
+    const ProductData = useContext(ProductContext);
+    console.log(ProductData);
+
     const handleChangeSort = (e) => {
         console.log(e.target.value);
     };

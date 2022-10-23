@@ -7,7 +7,8 @@ import {
     faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
-
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 import style from './ProductImg.module.scss';
 const cx = classNames.bind(style);
 
@@ -68,6 +69,7 @@ const ProductImg = () => {
                     slidesPerView={5}
                     modules={[Navigation, Thumbs]}
                     loop
+                    spaceBetween={10}
                 >
                     {demoImg.map((item, index) => {
                         return (

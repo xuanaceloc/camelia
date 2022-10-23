@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import style from './Product.module.scss';
@@ -35,6 +35,7 @@ const Product = () => {
     const handleSelectColor = (e) => {
         setMainImg(e.target.dataset.src);
     };
+
     return (
         <div className={cx('wrapper')}>
             <Link to="/">
